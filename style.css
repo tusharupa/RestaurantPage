@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    background-color:rgb(224, 216, 216);
+}
+#content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+    
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    background-color: rgb(172, 143, 143);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tab{
+    margin-top: 1em;
+    padding: 0.6em;
+    margin-bottom: 1em;
+    padding:0.6rem 1rem 0.6rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+}
+.tab.active{
+  
+    background-color: rgb(189, 98, 98);
+}
+.about{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    flex: 1;
+    padding: 2rem;
+}
+.name{
+font-weight: 600;
+font-size: 2.4em;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+padding: 2rem;
+color: rgb(146, 64, 64);
+}
+.detail{
+    width: 70%;
+    font-family:monospace;
+    font-size: 1.5em;
+    padding: 1.5rem;
+    text-align: justify;
+    color: rgb(97, 96, 93);
+}
+.timings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+#timings{
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 2.5em;
+    padding: 3rem;
+    color:rgb(146, 64, 64);
+}
+.timings > ul{
+    font-family: monospace;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    color: rgb(97, 96, 93);;
+}
+
+.menu{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.food{
+   display: flex;
+background-color: #000;
+flex-direction: column;
+  width: 640px;
+  height: 320px;
+  transition: 0.4s;
+  overflow: hidden;
+  margin: 20px 0;
+  animation: appear 1s ease-in-out;
+  cursor: pointer;
+}
+.description{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.2s;
+    color: white;
+    font-family:monospace;
+    font-weight: 600;
+}
+img{
+width: 100%;
+height: 100%;
+}
+.food:hover .description {
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    transform: translateY(-100%);
+  }
+  .food:hover {
+    box-shadow: 0 0 20px 2px rgba(119, 57, 161, 0.7);
+  }
+  .food .description h3 {
+    font-size: 22px;
+  }
+  button{
+    border: none;
+  }
+  .contact{
+      display: flex;
+      margin-top: 15rem;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+
+
+  }
+  .contact > p{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 3rem;
+        font-size: 2rem;
+        text-align: center;
+        color: rgb(170, 94, 94);
+    }
